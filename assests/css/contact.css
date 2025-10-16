@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+input:focus, textarea:focus {
+    border-color: rgb(152, 23, 0);
+    box-shadow: 0 0 5px rgba(152, 23, 0, 0.5);
+}
+
+
+footer h5 {
+    margin-bottom: 15px;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 60px;
+        height: 60px;
+    }
+    .container .row {
+        text-align: center;
+    }
+}

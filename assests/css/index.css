@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgb(152, 23, 0);
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 18px;
+}
+
+h1, h2, h5 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.siop, .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+footer {
+  margin-top: 50px;
+}
+
+

@@ -1,0 +1,44 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgb(152, 23, 0);
+}
+    .gallery-card {
+      border: none;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-card img {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gallery-card:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-card:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .card-title {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .card-text {
+      font-size: 0.85rem;
+      color: gray;
+    }
+
+    
+footer {
+  margin-top: 50px;
+}
