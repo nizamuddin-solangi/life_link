@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assests/css/contact.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(152, 23, 0);">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo 2.png" alt="Logo" width="80" height="80">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html" target="_blank">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="about.html" target="_blank">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+            Categories
+          </a>
+          <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="ac.html" target="_blank">Ac Ambulance</a></li>
+                        <li><a class="dropdown-item" href="non-ac.html" target="_blank">Non Ac Ambulance</a></li>
+                        <li><a class="dropdown-item" href="air.html" target="_blank">Air Ambulance</a></li>
+                        <li><a class="dropdown-item" href="icu.html" target="_blank">I.C.U Ambulance</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="image_gallery.html" target="_blank">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="feedback.html" target="_blank">Feedback</a></li>
+        <li class="nav-item"><a class="nav-link text-white active" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5">
+  <div class="row g-4">
+    
+    <div class="col-lg-5 col-md-6 text-white p-5 rounded" style="background-color: rgb(152, 23, 0);">
+      <h2 class="mb-3 mt-5 text-center">Contact Info</h2>
+      <hr>
+   <div class="icon ms-5 ">
+       <p><strong>📍 Address:</strong> Karachi, Pakistan</p>
+      <p><strong>📞 Phone:</strong> +92 300 1234567</p>
+      <p><strong>📧 Email:</strong> contact@lifelink.com</p>
+   </div>
+    </div>
+
+<div class="col-lg-7 col-md-6 p-4 bg-white rounded shadow">
+  <h2 class="mb-4 text-center text-danger">Send Us a Message</h2>
+
+
+  <div id="thankYouMessage" class="alert alert-success text-center d-none">
+    ✅ Thank you! We contact Soon.
+  </div>
+
+  <form id="contactForm" novalidate>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="First Name" name="firstName" pattern="^[A-Za-z\s]+$" required>
+        <div class="invalid-feedback">Please enter a valid first name (letters only).</div>
+      </div>
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Last Name" name="lastName" pattern="^[A-Za-z\s]+$" required>
+        <div class="invalid-feedback">Please enter a valid last name (letters only).</div>
+      </div>
+      <div class="col-12">
+        <input type="email" class="form-control" placeholder="Email Address" name="email" required>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+      <div class="col-12">
+        <input type="tel" class="form-control" placeholder="Phone Number" name="phone" pattern="^[0-9]{10,15}$" required>
+        <div class="invalid-feedback">Please enter a valid phone number (10-15 digits).</div>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" rows="5" placeholder="Write your message" name="message" required></textarea>
+        <div class="invalid-feedback">Please write your message.</div>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-danger px-4">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+(function () {
+  'use strict'
+  const form = document.getElementById('contactForm');
+  const thankYou = document.getElementById('thankYouMessage');
+
+  form.addEventListener('submit', function (event) {
+    if (!form.checkValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+    } else {
+      event.preventDefault(); 
+      form.classList.remove('was-validated');
+      form.reset();
+      thankYou.classList.remove('d-none'); 
+            setTimeout(() => {
+        thankYou.classList.add('d-none'); 
+      }, 5000);
+    }
+    form.classList.add('was-validated');
+  }, false);})();
+</script>
+
+
+  </div>
+</div>
+
+
+<footer class="bg-dark text-white pt-4 pb-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 text-center text-md-start">
+        <img src="images/WhatsApp_Image_2025-08-12_at_1.50.00_PM-removebg-preview.png" alt="" width="120">
+        <p class="mt-2">"Your trusted eAmbulance partner for fast, reliable, and life-saving emergency transport"</p>
+      </div>
+      <div class="col-md-3">
+        <h5 class="text-danger">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white text-decoration-none" target="_blank">Home</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none"target="_blank">About Us</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+          <li><a href="feedback.html" class="text-white text-decoration-none"target="_blank">Feedback</a></li>
+          <li><a href="image_gallery.html" class="text-white text-decoration-none"target="_blank">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="text-danger">Contact</h5>
+        <p>📞 +92 300 1234567</p>
+        <p>📧 contact@lifelink.com</p>
+        <p>📍 Karachi, Pakistan</p>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <small>© 2025 LifeLink. All Rights Reserved.</small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
